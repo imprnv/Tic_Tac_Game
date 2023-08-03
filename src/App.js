@@ -10,7 +10,7 @@ export default function Board() {
   const [xIsNext,xSetNext] = useState(true)
   const [Squares,setSquares] = useState(Array(9).fill(null));
   function handleClick (i) {
-    if(Square[i]||calculateWinner(Square)){
+    if(Squares[i]||calculateWinner(Square)){
       return;
     }
    
